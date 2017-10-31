@@ -11,17 +11,17 @@ String []outs = new String [totalColumns];
 &lt;td class="yfnc_tabledata1" align="right"&gt;~@volumen@~&lt;/td&gt;
 &lt;td class="yfnc_tabledata1" align="right"&gt;~@cierreAjustado@~&lt;/td&gt;
 */
-outs [0] = session.getVariable( "laFecha" );
-outs [1] = session.getVariable( "precioApertura" );
-outs [2] = session.getVariable( "maxima" );
-outs [3] = session.getVariable( "baja" );
-outs [4] = session.getVariable( "cierre" );
-outs [5] = session.getVariable( "volumen" );
-outs [6] = session.getVariable( "cierreAjustado");
+outs [0] = session.getVariable( "theDate" );
+outs [1] = session.getVariable( "theAbierto" );
+outs [2] = session.getVariable( "theAlto" );
+outs [3] = session.getVariable( "theBajo" );
+outs [4] = session.getVariable( "theCierre" );
+outs [5] = session.getVariable( "theCierreA" );
+outs [6] = session.getVariable( "theVolumen" );
 writer.write(outs);
 writer.flush();
 
 // Output a message to the log so we know that we'll be writing the text out to a file.
 session.log( "Writing data to a file." ); // Tip: You can also use log.debug( message )
 
-</script-text><name>GuardarPreciosAccion</name><language>Interpreted Java</language><date_exported>noviembre 28, 2016 13:31:51</date_exported></script>
+</script-text><name>GuardarPreciosAccion</name><language>Interpreted Java</language><date_exported>octubre 31, 2017 17:13:59</date_exported></script>
